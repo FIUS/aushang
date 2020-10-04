@@ -1,0 +1,10 @@
+# Configuration created Sat Sep 30 13:10:46 2017 by fetchmailconf 1.57
+set postmaster "aushang"
+set bouncemail
+set no spambounce
+set softbounce
+set properties ""
+
+poll {{ .Env.IMAP_SERVER }} with proto IMAP
+       user '{{ .Env.IMAP_USER }}' there with password '{{ .Env.IMAP_PASSWD }}' is 'aushang' here
+       mda '/usr/bin/procmail -d %T'

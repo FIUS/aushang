@@ -1,0 +1,11 @@
+:0
+*^content-Type:
+{
+        # this is the place where the attachments will be unpacked to
+        UNPACK_DIR=/data/from_mail
+
+        # forward to uudeview
+        :0fw
+        | uudeview -p $UNPACK_DIR -
+}
+
