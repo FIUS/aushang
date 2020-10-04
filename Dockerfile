@@ -22,8 +22,7 @@ ADD src/scripts/entrypoint.sh /opt/
 
 ADD --chown=www-data:www-data src/website/ /var/www/html/
 
-RUN mkdir --parents /data/from_mail /data/live && \
-    touch /var/log/aushang.log && \
+RUN touch /var/log/aushang.log && \
     chmod 755 /opt/fetchAushang.sh /opt/startFetchAushang.sh /opt/entrypoint.sh && \
     ln -s /data/live/ /var/www/html/data && \
     ln -s /opt/startFetchAushang.sh /etc/cron.hourly/ && \

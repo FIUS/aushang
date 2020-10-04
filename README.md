@@ -10,3 +10,6 @@ These environment variables must be set:
  * `IMAP_SERVER`
  * `IMAP_USER`
  * `IMAP_PASSWD`
+
+## Data
+To make sure the data is persistent add a volume as `/data`
