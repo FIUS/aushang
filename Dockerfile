@@ -25,7 +25,7 @@ ADD --chown=www-data:www-data src/website/ /var/www/html/
 RUN touch /var/log/aushang.log && \
     chmod 755 /opt/fetchAushang.sh /opt/startFetchAushang.sh /opt/entrypoint.sh && \
     ln -s /data/live/ /var/www/html/data && \
-    ln -s /opt/startFetchAushang.sh /etc/cron.hourly/ && \
+    ln -s /opt/startFetchAushang.sh /etc/cron.hourly/startFetchAushang && \
     adduser -q --disabled-password --gecos "" aushang
 
 CMD dockerize -template /etc/fetchmailrc.tmpl:/etc/fetchmailrc -stdout /var/log/aushang.log /opt/entrypoint.sh
