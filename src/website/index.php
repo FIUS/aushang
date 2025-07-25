@@ -1,11 +1,12 @@
-
 <!DOCTYPE HTML>
 <html>
+
 <head>
- <title>FIUS Aushang</title>
- <meta charset="UTF-8">
- <link rel="stylesheet" href="stylesheet.css"/>
+    <title>FIUS Aushang</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="stylesheet.css" />
 </head>
+
 <body>
     <nav>
         <h1 class="heading"> FIUS elektronischer Aushang </h1>
@@ -132,5 +133,5 @@
     </footer>
 
 </body>
-</html>
 
+</html>
