@@ -32,53 +32,20 @@ h2 {
   padding-left: 0;
   margin: 0px;
 }
-
-.logo {
-  height: 2rem;
-  vertical-align: middle;
-  margin-right: 10px;
-  color: white;
-}
-
 .menu {
-  margin: 0px;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1.5rem;
+    background-color: #3333ff;
+    margin: 0px;
+    text-align: center;
+    padding: 10px;
 }
 .menubutton {
-  color: white;
-  text-decoration: none;
-  text-align: center;
-  position: relative;
+    color: white;
+    text-decoration: none;
+    text-align: center;
 }
 .menubutton:hover {
-  color: white;
-  text-decoration: underline;
-}
-
-.hover-label {
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.8);
-  color: white;
-  padding: 0.3rem 0.6rem;
-  border-radius: 4px;
-  font-size: 1rem;
-  white-space: nowrap;
-  bottom: -2.5rem;
-  left: 50%;
-  transform: translateX(-50%);
-  opacity: 0;
-  transition: opacity 0.2s ease-in-out;
-  pointer-events: none;
-  z-index: 100;
-}
-
-.menu-hover-label:hover .hover-label {
-  opacity: 1;
-  display: block !important;
+    color: white;
+    text-decoration: underline;
 }
 .contentbox {
   width: 100%;
@@ -90,33 +57,39 @@ h2 {
 
 footer {
   width: 100%;
-  background-color: #f8f9fa;
-  border-top: 1px solid #e0e0e0;
-  margin-top: 2rem;
-  padding: 2rem 0;
 }
 
 .footer-menu-outer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 2rem;
+    color: rgb(0, 0, 0);
+    font-size: 10.6667px;
+    line-height: 19.0667px;
+    text-align: right;
+    text-shadow: rgb(192, 192, 192) 3px 3px 7px;
 }
 
 .footer-menu {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  gap: 2rem;
-  align-items: center;
+    color: rgb(0, 0, 0);
+    font-size: 10.6667px;
+    line-height: 19.0667px;
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+    margin-right: 50px;
+    text-align: right;
+    text-shadow: rgb(192, 192, 192) 3px 3px 7px;
 }
 
 .footer-entry {
-  margin: 0;
-  padding: 0;
+    color: rgb(0, 0, 0);
+    display: inline;
+    font-size: 10.6667px;
+    line-height: 19.0667px;
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+    padding-left: 20px;
+    text-align: right;
+    text-shadow: rgb(192, 192, 192) 3px 3px 7px;
 }
 
 .footer-link {
