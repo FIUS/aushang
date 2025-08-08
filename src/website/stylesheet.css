@@ -6,6 +6,12 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 nav {
@@ -17,6 +23,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 h1 {
@@ -53,10 +60,17 @@ h2 {
   text-decoration: none;
   text-align: center;
   position: relative;
+  padding: 0.5rem;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
 }
 .menubutton:hover {
   color: white;
   text-decoration: underline;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .hover-label {
@@ -82,10 +96,12 @@ h2 {
 }
 .contentbox {
   width: 100%;
+  max-width: 1200px;
   padding: 1rem 2rem;
   margin: 0 auto;
   background-color: white;
   flex: 1;
+  box-sizing: border-box;
 }
 
 footer {
@@ -149,11 +165,13 @@ footer hr {
 
 /* File cards styling */
 .file-grid {
-  max-width: 95%;
+  width: 100%;
+  max-width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 1.5rem;
   padding: 1rem 0;
+  box-sizing: border-box;
 }
 
 .file-card {
@@ -231,19 +249,24 @@ footer hr {
 /* Responsive design */
 @media (max-width: 768px) {
   nav {
-    padding: 1rem 2rem;
+    padding: 1rem;
     flex-direction: column;
     gap: 1rem;
   }
 
+  .heading {
+    font-size: 1.5rem;
+  }
+
   .contentbox {
-    padding: 1rem 2rem;
-    max-width: 95%;
+    padding: 1rem;
+    max-width: 100%;
   }
 
   .file-grid {
     grid-template-columns: 1fr;
     gap: 1rem;
+    max-width: 100%;
   }
 
   .file-card {
@@ -260,9 +283,27 @@ footer hr {
 }
 
 @media (max-width: 480px) {
+  nav {
+    padding: 0.75rem;
+  }
+
+  .heading {
+    font-size: 1.25rem;
+    padding: 0.5rem;
+  }
+
   .contentbox {
-    padding: 1rem;
-    max-width: 95%;
+    padding: 0.75rem;
+    max-width: 100%;
+  }
+
+  .file-grid {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .file-card {
+    padding: 0.75rem;
   }
 
   .file-header {
@@ -283,5 +324,28 @@ footer hr {
 
   footer {
     padding: 1.5rem 0;
+  }
+
+  .menu {
+    gap: 1rem;
+  }
+}
+
+/* Additional responsive adjustments */
+@media (max-width: 360px) {
+  .contentbox {
+    padding: 0.5rem;
+  }
+
+  .file-grid {
+    gap: 0.5rem;
+  }
+
+  .file-card {
+    padding: 0.5rem;
+  }
+
+  .file-title {
+    font-size: 1rem;
   }
 }
