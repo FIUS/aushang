@@ -5,12 +5,13 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 nav {
   background-color: #006ab0;
   color: white;
-  padding: 1rem 20rem;
+  padding: 1rem 2rem;
   margin: 0;
   text-align: center;
   display: flex;
@@ -28,6 +29,7 @@ h1 {
 h2 {
   text-align: left;
   padding: 1rem;
+  padding-left: 0;
   margin: 0px;
 }
 
@@ -80,7 +82,7 @@ h2 {
 }
 .contentbox {
   width: 100%;
-  padding: 1rem 20rem;
+  padding: 1rem 2rem;
   margin: 0 auto;
   background-color: white;
   flex: 1;
@@ -147,6 +149,7 @@ footer hr {
 
 /* File cards styling */
 .file-grid {
+  max-width: 95%;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   gap: 1.5rem;
@@ -235,6 +238,7 @@ footer hr {
 
   .contentbox {
     padding: 1rem 2rem;
+    max-width: 95%;
   }
 
   .file-grid {
@@ -258,6 +262,7 @@ footer hr {
 @media (max-width: 480px) {
   .contentbox {
     padding: 1rem;
+    max-width: 95%;
   }
 
   .file-header {
