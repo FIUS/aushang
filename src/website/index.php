@@ -14,7 +14,7 @@
     }
     ?>
     <base href="<?php echo htmlspecialchars($basePath, ENT_QUOTES, 'UTF-8'); ?>">
-    <link rel="stylesheet" href="stylesheet.css" />
+    <link rel="stylesheet" href="./stylesheet.css" />
 </head>
 
 <body>
@@ -97,7 +97,7 @@
                 for ($i = 0; $i < count($files); $i++) {
                     $file = realpath("./data/" . $files[$i]);
                     $url = "data/" . $files[$i];
-                    if (!is_file($file) || !str_ends_with($files[$i], '.pdf'))
+                    if (!is_file($file) || strtolower(substr($files[$i], -4)) !== '.pdf')
                         continue;
 
                     $fileInfo = parseFilename($files[$i]);
